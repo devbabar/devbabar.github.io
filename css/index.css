@@ -1,13 +1,8 @@
 /*======= main image ======= Start*/
-/*best color pink red #E31B6D*/
 body, html{
-  /*min-height:100vh;*/
-  /*border-style: dotted;*/
-  /*color: green;*/
   width: 100%;
   max-width: 100%;
   /*-webkit-font-smoothing: antialiased;*/
-  /*width: 100vw;*/
 }
 
 .list-group-item{
@@ -23,7 +18,6 @@ h1{
   font-weight: 900;
   font-size: 70px;
   color: #E31B6D;
-  /*font-size: 2.5em !important;*/
 }
 
 h2{
@@ -32,12 +26,9 @@ h2{
 
 .container{
   width: 100%;
-  /*padding: 5px;*/
 }
 
-
 .welcome-img{
-  /*width:100vw;*/
   width: 100%;
   display: block;
   vertical-align:middle;
@@ -64,20 +55,11 @@ h2{
   width: 50%;
 }
 
-/*.welcome-note>h3{
-  font-family: 'Tangerine', serif;
-  font-size: 88px;
-  text-shadow: 4px 4px 4px #aaa;
-  background-color: white;
-  color: red;
-}*/
-
 .welcome-note>h3{
   font-family: 'Raleway', serif;
   font-size: 55px;
   text-shadow: 4px 4px 4px #aaa;
   font-weight: 700;
-  /*background-color: white;*/
   color: white;
 }
 
@@ -86,22 +68,8 @@ h2{
   font-size: 55px;
   text-shadow: 4px 4px 4px red;
   font-weight: 700;
-  /*background-color: white;*/
   color: white;
 }
-/*#welcome-img{
-  width:100vw;
-  display: block;
-  vertical-align:middle;
-  text-align:center;
-}
-
-#welcome-img img{
-  min-height:100vh;
-  max-width:100%;
-  width: 1700px;
-  max-height: 100vh;
-}*/
 /*======= main image ================================================ ends*/
 
 /*======= Navbar======================================================Start*/
@@ -131,12 +99,7 @@ h2{
 .nav a{
   font-size: 2.5em !important;
   font-weight: 900;
-  /*font-variant: small-caps;*/
 }
-/*.navbar-default .navbar-nav>.active>a:hover{
-  background-color: transparent;
-  color: red;
-}*/
 
 ul.nav a:hover{color: #8afaf1 !important;}
 
@@ -153,43 +116,22 @@ ul.nav a:hover{color: #8afaf1 !important;}
   padding: 10px 35px 10px 35px;
 }
 
-/*.navbar{
-  z-index:1;
-}*/
-/*.navbar-fixed-top{
-  z-index: -1;
-}*/
-
-
 /*======= Navbar ================================================ end*/
 
 
 /*======= About Container ================================================ Start*/
 
 .about{
-  /*max-height: 100vh;*/
-  /*min-height:100vh;*/
   width: 80%;
   position: relative;
-
 }
 
 .about-1-head{
   height: 135px;
 }
 
-/*.about-1-head>h1{
-  font-family: 'Raleway-bold', serif;
-  font-weight: 900;
-  font-size: 70px;
-  /*font-size: 2.5em !important;*/
-}*/
-
 .about-1{
   line-height: 18pt;
- /* max-height: 40vh;
-  min-height:40vh;*/
-  /*height: 40%;*/
 }
 
 .about-1-icons{
@@ -197,13 +139,10 @@ ul.nav a:hover{color: #8afaf1 !important;}
 
 }
 
-
 /*--------- Icon section start ---------*/
 .material-icons{
-  /*font-size: 165px;*/
   font-size: 125px;
   text-shadow: 4px 4px 4px #aaa;
-  /*position: absolute;*/
 }
 
 .list-group-item{
@@ -216,7 +155,6 @@ ul.nav a:hover{color: #8afaf1 !important;}
 }
 
 .list-group-item>h3{
-  /*font-family: 'Raleway-bold', serif;*/
   font-size: 30px;
   color: #4d4d4d;
   overflow: hidden;
@@ -228,8 +166,6 @@ ul.nav a:hover{color: #8afaf1 !important;}
 }
 
 .icons{
-  /*display: none;*/
-  /*visibility: hidden;*/
   opacity: 0;
 }
 
@@ -244,17 +180,12 @@ ul.nav a:hover{color: #8afaf1 !important;}
 
 .mybar{
     margin-top: 30px;
-    /*width: 400px;*/
 }​
 
 .bar-style{
   color:white;
   background-color: #E31B6D !im;
 }
-/*table,th,td{
-  border:1px solid black;
-  border-spacing: 5px;
-}*/
 
 #progress-bar-section{
   border-style:dotted;
@@ -265,37 +196,25 @@ ul.nav a:hover{color: #8afaf1 !important;}
 
 .progress{
   margin: 0px;
-  /*max-width: 100%;*/
 }
-
-/*.bar-title{
-  font-size: 25px;
-  background-color: #9ae5e5;
-  height: 50px;
-  text-align: center;
-}*/
 
 .table>tbody>tr>td{
   padding: 0px;
   font-size: 25px;
-  /*background-color: #9ae5e5;*/
   height: 45%;
   text-align: center;
 
 }
 
 .progressBar {
-    /*width: 800px;*/
     max-width: 100%;
     height: 45%;
-    /*border: 1px solid #111;*/
     background-color: #f2f2f2;
 }
 .progressBar div {
     height: 100%;
     color: #fff;
     text-align: center;
-    /*line-height: 22px;*/ /* same as #progressBar height if we want text middle aligned */
     width: 0;
     background-color: #f4a4c7;
 }
@@ -304,8 +223,6 @@ table{
   border-collapse: separate;
   border-spacing: 0 1em;
 }
-
-
 
 /*----------- progress bar ends-------------*/
 
@@ -321,22 +238,13 @@ svg{
 /*======= Project Container ================================================ Start*/
 
 .project{
-  /*max-height: 100vh;*/
   min-height:100vh;
   width: 80%;
   position: relative;
 
 }
 
-/*.project-head>h1{
-  font-family: 'Raleway', serif;
-  font-weight: 900;
-  font-size: 50px;
-}*/
-
 .project-1{
-/*  max-height: 40vh;
-  min-height:40vh;*/
   max-height: 100%;
   min-height:100%;
 }
@@ -348,16 +256,9 @@ svg{
     padding: 0;
     overflow: hidden;
     background-color: #E31B6D;
-    /*display: inline-block;*/
     min-width: 100%;
-    /*text-align: center;*/
-
 }
 
-/*li {
-    float: left;
-
-}*/
 .project-nav li{
   display: inline-block;
 }
@@ -385,15 +286,6 @@ svg{
   color: white;
 }
 
-/*#project-nav>.active, #project-nav>.btn:hover{
-  background-color: yellow;
-  color: white;
-}*/
-
-/*.active{
-    background-color: #4CAF50;
-}
-*/
 /*------------ Project section navbar ends-------------*/
 
 /*----------- django section  start---------*/
@@ -417,13 +309,6 @@ svg{
   color:#E31B6D;
 
 }
-
-/*.proj-exp-1.proj-exp-2.proj-exp-3 img{
-  overflow:auto;
-  max-width:100%;
-  max-height:100%;
-  position: absolute;
-}*/
 
 .img-style{
   max-width: 100%;
@@ -449,22 +334,12 @@ svg{
 
 .btn-top{
   text-align: center;
-  /*background: yellow;*/
-  /*position: absolute;*/
-  /*left: -100px;*/
-  /*top: 100px;*/
-  /*top: -20px;*/
   top: 0px;
-  /*width: 100px;
-  height: 100px;*/
   transition: 1s;
-
   opacity: 0;
   position: absolute;
-  /*left: 40%;*/
   left: 50%;
   transform: translate(-50%,-50%);
-
   z-index: 1000;
   border-radius: 15px;
   background: #E31B6D;
@@ -474,9 +349,7 @@ svg{
  }
 
 .div-style:hover .btn-top{
-  /*top: 60%;*/
   top: 30%;
-  /*left: 40%;*/
   opacity: 1;
   transition: 1s;
   margin: 0 auto;
@@ -486,15 +359,10 @@ svg{
 
 .btn-bottom{
   text-align: center;
-  /*background: yellow;*/
   position: absolute;
-  /*left: -100px;*/
-  /*top: 100px;*/
   bottom: -50px;
   left: 50%;
   transform: translate(-50%,-50%);
-  /*width: 100px;
-  height: 100px;*/
   transition: 0.5s;
   z-index: 1000;
   border-radius: 15px;
@@ -505,15 +373,11 @@ svg{
  }
 
 .div-style:hover .btn-bottom{
-  /*top: 60%;*/
   bottom: 0%;
-  /*left: 40%;*/
   opacity: 1;
   transition: 1s;
   margin: 0 auto;
-  display: inline-block;
-  /*left: 0;*/
- 
+  display: inline-block; 
  }
 
  .btn-bottom:hover{
@@ -526,15 +390,11 @@ svg{
  }
 
 .btn-top-heading{
-    /*top: 30%;*/
     left: 0%;
-    /*height: 20px;*/
     position: relative;
 }
 
 .btn-top h3{
-  /*height: 50%;*/
-  /*width: 100%;*/
   margin: 0px 0px 5px 0px;
   font-family: 'Raleway-bold', serif;
   font-weight: 900;
@@ -551,10 +411,8 @@ svg{
 }
 
 .btn-bottom h3{
-  /*height: 50%;*/
   height: 20px;
   width: 100%;
-  /*margin: 5px;*/
   font-family: 'Raleway-bold', serif;
   font-weight: 900;
   font-size: 200%;
@@ -577,7 +435,6 @@ svg{
 
 .modal-dialog{
   width: 80%;
-  /*top: 5vh;*/
   transform:translate(-50%,-50%);
   height: 100vh;
 }
@@ -602,19 +459,15 @@ svg{
 
 .modal-body ul{
   column-count: 3;
-  /*list-style: none;*/
   list-style-position: inside;
-  /*height: 10vh;*/
 }
 
 .modal-p ul{
   column-count: 2;
-  /*overflow: ellipsis;*/
 }
 
 .modal-body h2,h4{
   font-family: 'Raleway-bold', serif;
-  /*color: #E31B6D;*/
   color: white;
   letter-spacing: 1px;
   text-shadow: 0px 0 black, 0 0px black, 0px 0 black, 0 0px black;
@@ -626,46 +479,19 @@ svg{
   color: #666666;
   letter-spacing: 1px;
   text-shadow: 0px 0 black, 0 0px black, 0px 0 black, 0 0px black;
-  /*font-weight: 900;*/
   font-size: 1.25em;
 }
-
-/*.modal-body h4{
-  font-family: 'Raleway-bold', serif;
-  color: #E31B6D;
-  letter-spacing: 1px;
-  text-shadow: 0px 0 black, 0 0px black, 0px 0 black, 0 0px black;
-  font-weight: 900;
-}*/
 
 .modal-body li{
   font-family: 'Raleway-bold', serif;
   font-size: 1.25em;
-  /*color: #666666;*/
   color: white;
   letter-spacing: 1px;
   text-shadow: 0px 0 black, 0 0px black, 0px 0 black, 0 0px black;
 }
 
-/*.modal-body{
-  min-height: 35vh; blocked1
-  max-height: 35vh; blocked 2
-}*/
 .modal-content{
   background-color: #E31B6D;
-}
-  /*width: 100%;*/
-/*  min-height: 85vh; blocked 3
-  max-height: 100vh; blocked 4*/
-  /*background-color: #fff;*/
-  /*position: absolute;*/
-  /*top: 50% !important;
-  left: 50% !important;*/
- /* transform:translate(-50%,-50%);
-  padding: 2em;
-  border-radius: 1em;*/
-  /*opacity: 0;*/
-  /*visibility: hidden;*/
 }
 
 .modal-footer{
@@ -675,92 +501,20 @@ svg{
 .modal-footer a{
   color: white;
 }
-/*.modal{
-  background-color: rgba(0,0,0,.8);
-  width: 100% !important;
-  height: 100vh !important;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2000;
-  opacity: 0;
-  visibility: hidden;
-}*/
-/*.modal{
-  background-color: rgba(0,0,0,.8);
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2000;
-  opacity: 0;
-  visibility: hidden;
-}
 
-.modal__content{
-  width: 75%;
-  height: 65%;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform:translate(-50%,-50%);
-  padding: 2em;
-  border-radius: 1em;
-  opacity: 0;
-  visibility: hidden;
-}
-
-a:link,
-a:visited{
-  text-decoration: none;
-}
-
-.modal__close{
-  color: #363636;
-  font-size: 2em;
-  position: absolute;
-  top: .5em;
-  right: 1em;
-}
-
-.modal__heading{
-  color: dodgerblue;
-  margin-top: 1em;
-}
-
-.modal__paragraph{
-  line-height: 1.5em;
-}
-
-#modal:target{
-  opacity: 1;
-  visibility: visible;
-}
-
-#modal:target .modal__content{
-  opacity: 1;
-  visibility: visible;
-}*/
 /*------------ Sections modal ends -------------------------------*/
 
 
 /*======= Project Container ================================================ end*/
 
-
-
 /*======= Education Container ================================================ Start*/
 .education{
-  /*max-height: 100vh;*/
   min-height:100vh;
   width: 80%;
   position: relative;
 
 }
 .edu-1{
-/*  max-height: 40vh;
-  min-height:40vh;*/
   max-height: 100%;
   min-height:100%;
 }
@@ -858,29 +612,21 @@ a:visited{
 /*======= Contact Container ================================================ Start*/
 .contact{
   max-height: 100vh;
-  /*min-height: 100vh;*/
-  /*min-height:90vh;*/
   width: 80%;
   position: relative;
 
 }
 .contact-1{
-/*  max-height: 40vh;
-  min-height:40vh;*/
   max-height: 100%;
   min-height:100%;
-  /*min-height: 100vh;*/
   max-width: 100%;
   min-width: 100%;
 }
 
 
 .contact-2{
-/*  max-height: 40vh;
-  min-height:40vh;*/
   max-height: 100%;
   min-height:100%;
-  /*min-height: 100vh;*/
   max-width: 100%;
   min-width: 100%;
 }
@@ -892,52 +638,35 @@ a:visited{
 
 /*-----------Contact Navbar start-------------*/
 
-/*body {
-    margin:0;
-    padding:0;
-    font-family:sans-serif;
-    background:#002b38;
-}*/
 .xxx {
     max-width: 90%;
     min-width: 100%;
     display: inline-block;
-    /*margin:250px auto 0;*/
-    /*display:flex;*/
 }
 
 .xxx {
-    /*width:900px;*/
     margin:0px auto 20px 0;
-    /*display:flex;*/
-    /*min-height:100%;*/
 }
 .xxx .box {
     position:relative;
-    /*width: 300px;*/
-    /*height:100px;*/
     box-sizing:border-box;
     text-align:center;
-    /*margin:0 10px;*/
     background:#00171d;
     overflow:hidden;
     border-radius:4px;
     box-shadow:0 0 0 2px rgba(0,7,10,1);
     padding: 0px;
-    /*margin: 10px 0px 10px 0px;*/
     margin-bottom: 10px;
 }
 .xxx .box .icon {
     width:100%;
     height:100%;
-    /*background:#00171d;*/
     background:#E31B6D;
     transition: 0.5s;
 }
 .xxx .box .icon .fa {
     font-size: 4em;
     line-height:100px;
-    /*color: #0ff;*/
     color: white;
 }
 .xxx .box:hover .icon {
@@ -1008,48 +737,5 @@ a:visited{
     font-weight: 500;
   }
 
-
 /*-----------Contact form ends-------------*/
 /*======= Contact Container ================================================ end*/
-
-/*======= Section hide and show ================================================ start*/
-/*.flask-section{
-  visibility: hidden;
-}*/
-
-/*======= Section hide and show ================================================ ends*/
-
-/*best green shade #2eb8b8*/
-/*best light green #8afaf1*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=yes">
-		<title>My test page</title>
-		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"> -->
+		<title>Babar's Portfolio</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
@@ -13,17 +12,18 @@
 		<link rel="stylesheet" type="text/css" href="css/media_query.css">
 	</head>
 	<body>
-		<div class="container welcome-img" style="border-style:otted;color:ed;">
-			<!-- <img src="img/main-img.jpg"> -->
+		<!-- ########### Intro starts ###########-->
+		<div class="container welcome-img">
 			<img src="img/desktop3.jpg">
 			<div class="welcome-note">
 				<h3>Hello, I'm <span>Babar Baig.</span></h3>
 				<h3>I'm a full-stack developer.</h3>
+				<div>
+					<a href="https://github.com/devbabar" target="_blank"><i class="fa fa-github fa-5x" style="color:#E31B6D;"></i></a>
+				</div>
 			</div>
 		</div>
-  		<!-- <div id="welcome-img">
-  			<img src="img/main-img.jpg">
-  		</div> -->
+		<!-- ########### Intro Ends ###########-->
 
   		<!-- ########### Navbar starts ###########-->
 		<nav class="navbar navbar-default">
@@ -59,16 +59,20 @@
   			</div><!-- /.container-fluid -->
 		</nav>
 		<!-- ########### Navbar Ends ###########-->
-		<div style="border-style:otted;background-color: f2f2f2;">
-		<div class="container about" style="border-style:otted;">
+
+		<!-- ########### About starts ###########-->
+		<div style="background-color: f2f2f2;">
+		<div class="container about">
 			<div class="row">
-				<section class="about-1" style="border-style:otted;color:lue;">
+				<section class="about-1">
 					<div class="text-center about-1-head">
 						<h1>About<div id="mywidth"></div></h1>
 					</div>
 				</section>
+
+				<!-- ########### Icons Container starts ###########-->
 				<div class="container">
-				<section class="about-1-icons" style="border-style:otted;color:#E31B6D;">
+				<section class="about-1-icons" style="color:#E31B6D;">
 					<figure class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center icons">
 						<p><i class="material-icons">devices</i></p>
 						<figcaption>
@@ -115,10 +119,11 @@
 					</figure>
 				</section>
 				</div>
+				<!-- ########### Icons Container ends ###########-->
 
 				<!-- ########### Intro section start ########### -->
 				<div class="container">
-				<section class="about-2 col-sm- col-md-6 col-lg-6 text-center" style="border-style:otted;color:lue;height:inherit;">
+				<section class="about-2 col-sm- col-md-6 col-lg-6 text-center" style="height:inherit;">
 					<div id="my_img" style="text-align: center;">
 						<svg viewBox="10 3 127 105" version="1.1" xmlns="http://www.w3.org/2000/svg">
 							<defs>
@@ -142,10 +147,6 @@
 
 				<!-- ########### Progress bar start ########### -->
     			<section id="progress-bar-section" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-    				<!-- <div id="progressBar1" class="progressBar"><div></div></div>
-    				<div id="progressBar2" class="progressBar"><div></div></div>
-    				<div id="progressBar3" class="progressBar"><div></div></div> -->
-
     				<div class="table-responsive">          
 						<table class="table">
 							<tbody>
@@ -218,10 +219,11 @@
 			</div>
 		</div>
 		</div>
-		<!-- ########### Project Section Start ########### -->
+		<!-- ########### About endss ###########-->
 
-		<div style="border-style:otted;background-color:#f2f2f2;">
-		<div class="container project" id="project-container" style="border-style:otted;background-color: hite;margin-bottom:50px;">
+		<!-- ########### Project Section Start ########### -->
+		<div style="background-color:#f2f2f2;">
+		<div class="container project" id="project-container" style="margin-bottom:50px;">
 			<div class="row">	
 				<section class="project-1" style="border-style:otted;color:blue;">
 					<div class="text-center">
@@ -243,29 +245,18 @@
 							<div class="modal-content" style="padding:10px">
 								<div class="modal-header">
 									<button type="button" data-dismiss="modal" style="float:right;">&times;</button>
-									<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-									<!-- <h4 class="modal-title">Modal Header</h4> -->
 								</div>
 								<div id="img-carousel-control" class="carousel slide" data-ride="carousel">
 									<!-- Wrapper for slides -->
 									<div class="carousel-inner">
 										<div class="item active" id="img1">
 											<img class="img-responsive img-style-project" src="img/django/lambo1.jpeg" alt="...">
-											<!-- <div class="carousel-caption">
-												One Image
-											</div> -->
 										</div>
 										<div class="item" id="img2">
 											<img class="img-responsive img-style-project" src="img/django/lambo2.jpg" alt="...">
-											<!-- <div class="carousel-caption">
-												Another Image
-											</div> -->
 										</div>
 										<div class="item" id="img3">
 											<img class="img-responsive img-style-project" src="img/django/lambo4.jpg" alt="...">
-											<!-- <div class="carousel-caption">
-												Another Image
-											</div> -->
 										</div>
 									</div>
 
@@ -284,7 +275,6 @@
 									<ul></ul>
 									<hr>
 									<h4>Description</h4>
-									<!-- <p></p> -->
 									<div class="modal-p">
 										<ul></ul>
 									</div>
@@ -419,7 +409,7 @@
 								<img src="img/python/mysql_to_json_csv/mysql_to_json_csv.jpg" class="img-style">
 								<div class="btn-top">
 									<div class="btn-top-heading">
-									<h3>MySQL database tables to Json and CSV</h3>
+									<h3>MySQLDB to JSON and CSV</h3>
 									<p>Python + MySQLdb</p>
 									</div>
 								</div>
@@ -433,8 +423,8 @@
 								<img src="img/python/read_api_save_into_mysql_db/api_json_mysql.jpg" class="img-style">
 								<div class="btn-top">
 									<div class="btn-top-heading">
-									<h3>Read json-api</h3>
-									<p>Python + MySQLdb + Json</p>
+									<h3>Read JSON-API</h3>
+									<p>Python + MySQLdb + JSON</p>
 									</div>
 								</div>
 								<a data-toggle="modal" data-name="python3" data-target="#myModal">
@@ -461,8 +451,8 @@
 								<img src="img/python/read_write_csv_json/read_write_csv_json.jpg" class="img-style">
 								<div class="btn-top">
 									<div class="btn-top-heading">
-									<h3>Read/Write CSV & Json</h3>
-									<p>Python + CSV + Json</p>
+									<h3>Read/Write CSV & JSON</h3>
+									<p>Python + CSV + JSON</p>
 									</div>
 								</div>
 								<a data-toggle="modal" data-name="python5" data-target="#myModal">
@@ -540,7 +530,7 @@
 								<div class="btn-top">
 									<div class="btn-top-heading">
 										<h3>E-commerce Purchases Analysis</h3>
-										<p>Python + CSV + Json</p>
+										<p>Python + CSV + JSON</p>
 									</div>
 								</div>
 								<a data-toggle="modal" data-name="analysis5" data-target="#myModal">
@@ -598,19 +588,20 @@
 			</div>
 		</div>
 		</div>
-
 		<!-- ########### Project Section ends ########### -->
 
 		<!-- ########### Education Section Start ################## -->
 		<div style="background-color: b3b3b3;">
-		<div class="container education" style="border-style:ottd;background-color: white;margin-bottom:50px;">
+		<div class="container education" style="background-color: white;margin-bottom:50px;">
 			<div class="row">	
-				<section class="edu-1" style="border-style:oted;color:blu;">
+				<section class="edu-1">
 					<div class="text-center edu-head">
-						<h1>Education</h1>
+						<h1>Education</h1><hr>
 					</div>
+
+					<!-- ########### School Info Section starts ###########-->
 					<section class="container edu-section">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 list-group-item" style="border-style:otted;color:green;">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 list-group-item">
 							<div class="list-group">
 								<h2 class="list-group-item-heading">Master of Science (Electrical Engineering).</h2>
 								<h4 class="list-group-item-heading major-name" style="margin-bottom:20px;">Double Major: Computer Engineering & System Engineering.</h4>
@@ -631,6 +622,9 @@
 							</div>
 						</div>
 					</section>
+					<!-- ########### School Info Section endss ###########-->
+
+					<!-- ########### Graduate Projects Section starts ###########-->
 					<section class="container">
 						<div class="text-center edu-head3">
 							<h1>Graduate Projects & Whitepapers</h1>
@@ -713,16 +707,10 @@
 								</div>
 							</a>
 						</div>			
-						<!-- <div class="footer_box_content">
-						    <div class="cleaner_h10"></div>
-						    <p>Many  thanks  to  everyone  who cleared snow and ice during the cold spell in February.
-						    Should Arctic conditions return, each block has a shovel and a jar of rock salt  to  clear  the  steps. 
-						    Please click more to read the full newsletter. Many  thanks  to  everyone  who cleared snow and ice during the cold spell in February.
-						    Should Arctic conditions return, each block has a shovel and a jar of rock salt  to  clear  the  steps. 
-						    Please click more to read the full newsletter.</p>
-						    <div class="button_01"><a href="pdf/xyz.pdf" target="_blank">Read more</a></div>
-						</div> -->
 					</section>
+					<!-- ########### Graduate Projects Section ends ###########-->
+
+					<!-- ########### Skills Section starts ###########-->
 					<section class="container skill-sec" style="">
 						<div class="text-center edu-head2">
 							<h1>Knowledge & Understanding</h1>
@@ -748,6 +736,7 @@
 							</div>
 						</div>
 					</section>
+					<!-- ########### Skills Section ends ###########-->
 				</section>
 			</div>
 		</div>
@@ -770,7 +759,7 @@
 						
 						<div class="box col-lg-6 col-md-6 col-sm-8 col-xs-8 col-lg-offset-3 col-md-offset-3 col-xs-offset-2">
 							<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-							<div class='details'><h3>+91 9033446195</h3></div>
+							<div class='details'><h3>+1 (323)275-1286</h3></div>
 						</div>
 						
 						<div class="box col-lg-6 col-md-6 col-sm-8 col-xs-8 col-lg-offset-3 col-md-offset-3 col-xs-offset-2">
@@ -784,32 +773,10 @@
 							</div>
 						</a>
 					</div>
+					<div class="info-box text-center">
+			      		<div class="footnote">BABAR BAIG <span class="highlight"> &copy; 2018</span></div>
+			    	</div>
 				</section><hr>
-				<!-- <section class="contact-2 col-md-5 col-lg-10" style="border-style:dotted;color:orange;">
-					    <div class="form-area">
-					        <form action="https://formspree.io/devbaig100@gmail.com" method="POST">
-					        <br style="clear:both">
-			                    <h3 style="margin-bottom: 25px; text-align: center;">Have a question?</h3>
-			    				<div class="form-group">
-									<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="email" name="_replyto" placeholder="Email" required>
-								</div>
-			                    <div class="form-group">
-				                    <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message" maxlength="140"rows="7"></textarea>
-				                                     
-			                    </div>
-			                    <div class="sub-btns">
-			                    	<button type="submit" value="Send" id="submit" name="submit" class="btn btn-primary pull-right">Submit</button>
-			                    	
-			                    </div>    
-					        
-					        </form>
-					    </div>
-				</section> -->
-					<!-- </div> -->
-				<!-- </section> -->
 			</div>
 		</div>
 		</div>
@@ -821,26 +788,3 @@
 	<script type="text/javascript" src="js/index.js"></script>
 	</body>
 </html>
-
-<!-- <section>
-	<div class="container mybar">
-		<div class="progress progress-striped active">
-			<div class="bar" style="width: 0%;background-color:yellow;"></div>
-		</div>
-		<div class="progress progress-striped active">
-			<div class="mama" style="width: 0%;"></div>
-		</div>
-		<div class="progress" style="height:50px;">
-			<div class="bar progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
-			aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%">
-			40% Complete (success)
-			</div>
-		</div>
-		<div class="progress" style="height:50px;">
-			<div class="mama progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
-			aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%">
-			40% Complete (success)
-			</div>
-		</div>
-	</div>
-</section> -->

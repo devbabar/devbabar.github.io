@@ -1,33 +1,12 @@
 $(document).ready(function(){
-    
-  //   $(window).on('scroll', fixHeader);
-		// var header = $('nav');
-		// var headerOffset = header.offset().top;
-		// function fixHeader(evt){
-		// 	var currentScroll = $(window).scrollTop()
-		// 	console.log(headerOffset, currentScroll);
-		// 	if(headerOffset < currentScroll){
-
-		// 		// header.addClass('navbar-fixed-top').css({"right":"10px","left":"10px"});
-		// 		header.addClass('navbar-fixed-top');
-		// 		$(".about").css({"margin-top":"88px"});
-		// 	}
-		// 	else {
-		// 	 header.removeClass('navbar-fixed-top');
-		// 	 $(".about").css({"margin-top":"0px"});
-		// 	}
-		// }
-
-
-  $(window).on('scroll', fixHeader);
+   
+	// ============== Sticky Navbar ====================
+	$(window).on('scroll', fixHeader);
 	var header = $('nav');
 	var headerOffset = header.offset().top;
 	function fixHeader(evt){
 		var currentScroll = $(window).scrollTop()
-		// console.log(headerOffset, currentScroll);
 		if(headerOffset < currentScroll){
-
-			// header.addClass('navbar-fixed-top').css({"right":"10px","left":"10px"});
 			header.addClass('navbar-fixed-top');
 			$(".about, .project, .education, .contact").css({"margin-top":"88px"});
 		}
@@ -36,26 +15,16 @@ $(document).ready(function(){
 		 $(".about, .project").css({"margin-top":"0px"});
 		}
 	}
-
-	// ==========calculate screen width============
-	// var width = $(window).width();
-	// $("#mywidth").text(width);
-	
+	// ============== Sticky Navbar Ends ====================
 
 	// ========Navbar color ===========
 	$("ul.nav a").click(function(){
 		$("ul.nav a").css({"background-color": "transparent","color":"#777"});
 		$("ul.nav a:focus").css({"background-color": "transparent","color":"#E31B6D"});
 	});
+	// ========Navbar color Ends ===========
 
-	// ========= on click button goes to certain div ========
-	// $("#about-btn, #project-btn").click(function() {
- //    $('html,body').animate({
- //        scrollTop: $(".about, .project").offset().top -88},
- //        'slow');
-	// });
-
-
+	// ======== OnClick Switch to different sections ===========
 	var aboutSec = $(".about");
 	var projectSec = $(".project");
 	var eduSec = $(".education");
@@ -63,8 +32,7 @@ $(document).ready(function(){
 
 	function navigateSection(section){
 		$('html,body').animate({
-        scrollTop: $(section).offset().top - 80},
-        'slow');
+        scrollTop: $(section).offset().top - 80},'slow');
 	};
 
 	$("#about-btn, #project-btn, #edu-btn, #con-btn").click(function() {
@@ -79,152 +47,20 @@ $(document).ready(function(){
 			navigateSection(conSec);
 		}
 	});
+	// ======== OnClick Switch to different sections Ends===========
 
-	// ================= Progress Bar ====================
-	 // var progress = setInterval(function() {
-  //       var $bar = $('.bar');
-
-  //       if ($bar.width()>=300) {
-  //           clearInterval(progress);
-  //           $('.progress').removeClass('active');
-  //       } else {
-  //           $bar.width($bar.width()+40).css({"background-color":"red"});
-
-  //       }
-  //       $bar.text($bar.width()/4 + "%");
-  //   }, 100);
-
-
-
-// -----------------final start
-	// function progressBar(bar,percentage,val,divide){
-	// 	var progress = setInterval(function() {
-	// 		// console.log(bar.width());
-	//         if (bar.width()>=percentage) {
-	//             clearInterval(progress);
-	//             $('.progress').removeClass('active');
-	//         } else {
-	//             bar.width(bar.width()+val).css({"background-color":"red"});
-	//         }
-	//         bar.text(bar.width()/divide + "%").css({"font-size":"25px","height":"100%"});
- //    	}, 100);
-	// 	};
-
-	// // console.log($(window).width());
-	// var papa = $('.bar');
-	// var mama = $(".mama");
-	// progressBar(papa,550,55,5.5);
-	// progressBar(mama,550,50,275);
-// -----------------final end
-	// ==========test start ==========
-	// function progressBar(bar,percentage,val,divide){
-	// 	var progress = setInterval(function() {
-	// 		// console.log(bar.width());
-	//         if (bar.width()>=percentage) {
-	//             clearInterval(progress);
-	//             $('.progress').removeClass('active');
-	//         } else {
-	//             bar.width(bar.width()+val).css({"background-color":"red"});
-	//         }
-	//         bar.text(bar.width()/divide + "%").css({"font-size":"25px","height":"100%"});
- //    	}, 100);
-	// 	};
-
-	// // console.log($(window).width());
-	// var papa = $('.bar');
-	// var mama = $(".mama");
-	// // // progressBar(papa,550,55,5.5);
-	// // progressBar(mama,400,40,5);
-
-
-
-
-	// var $windowSize = $(window).width();
-			
-	// if ($windowSize >= 1796){
-	// 	progressBar(papa,666,34,6.8);
-	// } else if ($windowSize >= 1321 && $windowSize <= 1795){
-	// 	progressBar(papa,500,50,5);
-	// } else if ($windowSize >= 1069 && $windowSize <= 1322){
-	// 	progressBar(papa,400,40,4);
-	// } else if ($windowSize >= 1024 && $windowSize <= 1068){
-	// 	progressBar(papa,400,40,4);
-	// } else if ($windowSize >= 991 && $windowSize <= 1023){
-	// 	progressBar(papa,450,45,4.5);
-	// } else if ($windowSize >= 768 && $windowSize <= 991){
-	// 	progressBar(papa,450,45,4.5);
-	// } 
-	// ==========test ends ==========
+	// ======== Progress percentage bars ===========
 
 	function progress(percent, $element) {
 	    var progressBarWidth = percent * $element.width() / 100;
 	    $element.find('div').animate({ width: progressBarWidth }, 1000).html(percent + "% ");
 	}
+	// ======== Progress percentage bars Ends===========
 
-
-	// console.log($('#progressBar1').width());
-	// progress(90, $('#progressBar1'));
-	// progress(89, $('#progressBar2'));
-	// progress(35, $('#progressBar3'));
-
-
-	// $.fn.revealOnScroll = function(direction, speed){
-	// 	return this.each(function(){
-
-	// 		// console.log($(this));
-	// 		// var objectOffset = $(this).offset();
-	// 		// var objectOffsetTop = objectOffset.top + 400;
-	// 		var win = $(window).height()/2;
-	// 		// console.log("offset",objectOffsetTop);
-
-	// 		// we need to run this code only once we scroll
-	// 		// Do NOT use hidden class if your are using Bootstrap, name something else like "closed"
-	// 		if (!$(this).hasClass("closed")){
-
-	// 			// Run the code by checking it's direction
-	// 			if (direction == "right"){
-	// 				$(this).css({
-	// 					"opacity" : 0,
-	// 					"right"	  : "700px",
-	// 					"position": "relative"
-	// 				});
-	// 			} else if (direction == "left"){
-	// 				$(this).css({
-	// 					"opacity" : 0,
-	// 					"right"	  : "-700px",
-	// 					"position": "relative"
-	// 				});
-	// 			} else {
-	// 				$(this).css({
-	// 					"opacity" : 0						
-	// 				});
-	// 			}
-
-	// 			$(this).addClass("closed");
-	// 		} //------checking direction ends
-			
-	// 		// we don't want the code to be keep running after animation is completed
-	// 		if(!$(this).hasClass("animation-complete")){
-	// 			// if(windowScrollPositionBottom > objectOffsetTop){
-	// 			if(win === win){
-	// 				$(this).animate({"opacity":1, "right":0}, speed).addClass("animation-complete");
-	// 			}
-	// 		}
-	// 	});
-
-	// }; //function ends
-
+	// ======== Custom function to handle slidein from left and right ===========
 		$.fn.revealOnScroll = function(direction, speed){
 		return this.each(function(){
-
-			// console.log($(this));
-			// var objectOffset = $(this).offset();
-			// var objectOffsetTop = objectOffset.top + 400;
 			var win = $(window).height()/2;
-			// console.log("offset",objectOffsetTop);
-
-			// we need to run this code only once we scroll
-			// Do NOT use hidden class if your are using Bootstrap, name something else like "closed"
 			if (!$(this).hasClass("closed")){
 
 				// Run the code by checking it's direction
@@ -264,76 +100,21 @@ $(document).ready(function(){
 			}
 		});
 
-	}; //function ends
+	};
+	// ======== Custom function to handle slidein from left and right Ends ===========
 
+	// ======== Custom function to animate Icons ========
 	var fadeOutOnScroll = function(icons){
 		(icons).each(function(i) {
 			if (!$(this).hasClass("closed")){
-
-				// $(this).delay(500*(i+1)).fadeIn(1000); //Uses the each methods index+1 to create a multiplier on the delay
-				// $(this).css("visibility","visible").hide().delay(500*(i+1)).fadeIn(1000);
 				$(this).css("opacity",0).delay(500*(i+1)).animate({opacity:1},1000);
-
 				$(this).addClass("closed");
 			}
 		});
 	};
+	// ======== Custom function to animate Icons ends ========
 
-	// var icons = $('.icons');
-	// $(window).scroll(function(){
-	// 	var win = $(window).height()/2;
-	// 	console.log("window",win);
-
-	// 	var iconsFromTop = $(".about-1-icons").offset().top - $(window).scrollTop();
-	// 	var progressBarFromTop = $("#progress-bar-section").offset().top - $(window).scrollTop();
-	// 	console.log("ele from top",iconsFromTop);
-
-	// 	if (iconsFromTop <= win +100 ){
-	// 		fadeOutOnScroll(icons);
-	// 	}
-	// 	if (progressBarFromTop <= win +100 && (!$(this).hasClass("animation-complete")) ){
-	// 		progress(90, $('#progressBar1'));
-	// 		progress(89, $('#progressBar2'));
-	// 		progress(35, $('#progressBar3'));
-	// 	}
-
-	// });
-// ==================final start=======================
-	// var icons = $('.icons');
-	// $(window).scroll(function(){
-	// 	var win = $(window).height()/2;
-	// 	console.log("window",win);
-
-	// 	var xx= $(".about-2").offset().top - $(window).scrollTop();
-	// 	var iconsFromTop = $(".about-1-icons").offset().top - $(window).scrollTop();
-	// 	var progressBarFromTop = $("#progress-bar-section").offset().top - $(window).scrollTop();
-	// 	// console.log("ele from top",progressBarFromTop);
-
-	// 	if (iconsFromTop <= win +100 ){
-	// 		fadeOutOnScroll(icons);
-	// 	}
-
-	// 	if (progressBarFromTop <= win +100 || xx <= win +100 ){
-				
-	// 		$(".about-2").revealOnScroll("right", 1000);
-	// 		$("#progress-bar-section").revealOnScroll("left",1000);
-			
-	// 			progress(90, $('#progressBar1'));
-	// 			progress(89, $('#progressBar2'));
-	// 			progress(35, $('#progressBar3'));
-	// 			progress(90, $('#progressBar4'));
-	// 			progress(89, $('#progressBar5'));
-	// 			progress(35, $('#progressBar6'));
-	// 			progress(90, $('#progressBar7'));
-	// 			progress(89, $('#progressBar8'));
-	// 			progress(35, $('#progressBar9'));
-	// 			progress(90, $('#progressBar10'));
-	// 	}
-
-	// });
-
-// =================final ends================
-
+	// ======= Call functions for Icons and progressbar ==========
 	var icons = $('.icons');
 	var gradProj = $(".graduate_proj");
 	$(window).scroll(function(){
@@ -343,11 +124,9 @@ $(document).ready(function(){
 		var flaskSection= $(".flask-section").offset().top - $(window).scrollTop();
 		var pythonSection= $(".python-section").offset().top - $(window).scrollTop();
 		var graduateProj= $(".edu-head3").offset().top - $(window).scrollTop();
-		// var helloCont= $(".hello1").offset().top - $(window).scrollTop();
 		var about2= $(".about-2").offset().top - $(window).scrollTop();
 		var iconsFromTop = $(".about-1-icons").offset().top - $(window).scrollTop();
 		var progressBarFromTop = $("#progress-bar-section").offset().top - $(window).scrollTop();
-		// console.log("hello1 cont",helloCont);
 
 		if (iconsFromTop <= win +100 ){
 			fadeOutOnScroll(icons);
@@ -357,17 +136,16 @@ $(document).ready(function(){
 			
 			$.when( $(".about-2").revealOnScroll("right", 1000),
 				$("#progress-bar-section").revealOnScroll("left",1000)
-				// $(".hello1").revealOnScroll("left",1000)
 			 ).done(function(){
 			    progress(90, $('#progressBar1'));
-				progress(89, $('#progressBar2'));
-				progress(35, $('#progressBar3'));
-				progress(90, $('#progressBar4'));
-				progress(89, $('#progressBar5'));
-				progress(100, $('#progressBar6'));
-				progress(90, $('#progressBar7'));
-				progress(89, $('#progressBar8'));
-				progress(35, $('#progressBar9'));
+				progress(85, $('#progressBar2'));
+				progress(85, $('#progressBar3'));
+				progress(80, $('#progressBar4'));
+				progress(80, $('#progressBar5'));
+				progress(80, $('#progressBar6'));
+				progress(80, $('#progressBar7'));
+				progress(90, $('#progressBar8'));
+				progress(90, $('#progressBar9'));
 				progress(90, $('#progressBar10'));
 
 			});
@@ -375,15 +153,8 @@ $(document).ready(function(){
 	
 		}
 
-		// if (djangoSection <= win || flaskSection <= win || pythonSection <= win){
-		// 	$(".proj-exp-1,.proj-exp-3").revealOnScroll("right",1000);
-		// 	// $(".hello2").revealOnScroll("visible",1000);
-		// 	$(".proj-exp-2").revealOnScroll("left",1000);
-		// }
-
 		if (djangoSection <= win){
 			$(".proj-exp-1,.proj-exp-3").revealOnScroll("right",1000);
-			// $(".hello2").revealOnScroll("visible",1000);
 			$(".proj-exp-2").revealOnScroll("left",1000);
 		}
 
@@ -392,30 +163,10 @@ $(document).ready(function(){
 		}
 
 	});
-
-	// $(window).scroll(function(){
-
-	// 	windowHeight = $(window).height();
-	// 	windowScrollPositionTop = $(window).scrollTop();
-	// 	windowScrollPositionBottom = windowHeight + windowScrollPositionTop;
-	// 	// console.log(windowScrollPositionBottom);
 	
-	// 	// Calling revealOnScroll()
-	// 	// $(".display-gallery").revealOnScroll("",10000);
+	// ======= Call functions for Icons and progressbar ends ==========
 
-	// 	// $('.icons').hide();
-	// 	// $('.icons').each(function(i) {
- //  //   		$(this).delay(500*(i+1)).fadeIn(1000); //Uses the each methods index+1 to create a multiplier on the delay
-	// 	// });
-
-	// 	// Calling revealOnScroll() with arguments, Left, Right & Speed
-	// 	// $(".icons").fadeInOnScroll();
-	// 	$(".about-2").revealOnScroll("right", 1000);
-	// 	$("#progress-bar-section").revealOnScroll("left",1000);
-	// 	// $(".project-1").revealOnScroll("right", 2000);
-	// 	// $(".about3").revealOnScroll("left",2000);
-
-	// });
+	// ======== OnClick Switch to different Project sections ===========
 
 	$(".flask-section,.python-section,.analysis-section").hide();
 	$("#flask-link").click(function(e){
@@ -448,33 +199,10 @@ $(document).ready(function(){
 
 	});
 
+	// ======== OnClick Switch to different Project sections ends  ===========
+
 	// ===========modal start ============
 
-	// var imageArray = ["img/django/house1.jpeg","img/django/house2.jpg","img/django/house3.jpg"];
-	// var imageIndex = 0;
-	// $(".proj-exp-1>a").click(function(){
-	// 	// var mama = $(this).attr("data-target");
-	// 	var lol = $(this).data("name");
-	// 	console.log(lol);
-	// 	// $("#baba").attr("id",mama);
-	// 	if (lol==="koko"){
-	// 		$(".item>img").attr('src',imageArray[imageIndex]);
-	// 		if (imageIndex >= imageArray.length) {
- //            	imageIndex = 0;
- //        	}
-	// 	}
-
-	// });
-	
-	// var screenSize = $(window).width();
-	// alert("your size" + screenSize);
-	// var pythonSectionImg = function(myScreenWidth){
-	// 	if (myScreenWidth == 1680){
-	// 		$(".img-style-project").css("max-height","60vh");
-	// 		$(".modal-body").css({"height":"initial","overflow":"hidden"});
-	// 	}
-	// };
-	
 	// *************** Django Section Images ****************
 	var djangoImg1 = ["img/django/mycar/home.png","img/django/mycar/home-hover.jpg","img/django/mycar/search-res.png"];
 	var djangoImg2 = ["img/django/expressit/home.png","img/django/expressit/nav.jpg","img/django/expressit/reg2.jpg"];
@@ -510,7 +238,6 @@ $(document).ready(function(){
 	modalBodyH2 = $(".modal-body>h2");
 	modalBodyUl = $(".modal-body>ul");
 	modalBodyP = $(".modal-body>.modal-p>ul");
-	// modalFooterA = $(".modal-footer>div>a");
 	modalFooterA = $("#github_link");
 
 	var modalFunction = function(){
@@ -659,12 +386,12 @@ $(document).ready(function(){
 			$("#img1>img").attr('src',pythonImg2[0]);
 			$("#img2>img").attr('src',pythonImg2[1]);
 			$("#img3>img").attr('src',pythonImg2[2]);
-			modalBodyH2.html("MySQL to Json & CSV files.");
+			modalBodyH2.html("MySQL to JSON & CSV files.");
 			modalBodyUl.html(
-				"<li>Python</li>"+"<li>MySQLdb</li>"+"<li>Json</li>"+"<li>CSV</li>");
+				"<li>Python</li>"+"<li>MySQLdb</li>"+"<li>JSON</li>"+"<li>CSV</li>");
 			modalBodyP .html(
-				"<li>This script converts MySQL database tables to Json and CSV files as an output files.</li>"+
-				"<li>On execution, it will ask Json & CSV file name separately.</li>"+
+				"<li>This script converts MySQL database tables to JSON and CSV files as an output files.</li>"+
+				"<li>On execution, it will ask JSON & CSV file name separately.</li>"+
 				"<li>Error handling if file name is not correct according to the defined file name pattern.</li>"
 				);
 			modalFooterA.attr("href","https://github.com/devbabar/mysql_to_json_csv");
@@ -672,12 +399,12 @@ $(document).ready(function(){
 			$("#img1>img").attr('src',pythonImg3[0]);
 			$("#img2>img").attr('src',pythonImg3[1]);
 			$("#img3>img").attr('src',pythonImg3[2]);
-			modalBodyH2.html("Read Json data from an API and store into MySQL database.");
+			modalBodyH2.html("Read JSON data from an API and store into MySQL database.");
 			modalBodyUl.html(
-				"<li>Python</li>"+"<li>MySQLdb</li>"+"<li>Json</li>"+"<li>urllib2</li>"+"<li>API</li>");
+				"<li>Python</li>"+"<li>MySQLdb</li>"+"<li>JSON</li>"+"<li>urllib2</li>"+"<li>API</li>");
 			modalBodyP .html(
 				"<li>Create a database and table</li>"+
-				"<li>Read json-api and store it into mysql database.</li>"
+				"<li>Read JSON-API and store it into mysql database.</li>"
 				);
 			modalFooterA.attr("href","https://github.com/devbabar/read_api_save_into_mysql_db");
 		} else if (dataName==="python4"){
@@ -697,16 +424,16 @@ $(document).ready(function(){
 			$("#img1>img").attr('src',pythonImg5[0]);
 			$("#img2>img").attr('src',pythonImg5[1]);
 			$("#img3>img").attr('src',pythonImg5[2]);
-			modalBodyH2.html("Generate CSV & Json file from search results.");
+			modalBodyH2.html("Generate CSV & JSON file from search results.");
 			modalBodyUl.html(
-				"<li>Python</li>"+"<li>CSV</li>"+"<li>Json</li>"+"<li>Prettyprint</li>"+"<li>Unittest</li>");
+				"<li>Python</li>"+"<li>CSV</li>"+"<li>JSON</li>"+"<li>Prettyprint</li>"+"<li>Unittest</li>");
 			modalBodyP .html(
-				"<li>This program will get the user input location and display the output if found any match is csv file. If match found, it will create the csv and the json file for that particular location, otherwise keep asking to enter a valid location.</li>"+
+				"<li>This program will get the user input location and display the output if found any match is csv file. If match found, it will create the csv and the JSON file for that particular location, otherwise keep asking to enter a valid location.</li>"+
 				"<li>Find the 'Location' from user input and search the match from given CSV file and group by the city name, price, Bedrooms,Bathrooms,Size,Price/SQ.Ft,Status.</li>"+
 				"<li>Display the resultant data in tabular form.</li>"+
 				"<li>Find and display the total number of properties, most expensive property, Least expensive property, average property price and average property price per sq/ft in a matched result.</li>"+
 				"<li>Calculate and display the execution time and the total number of rows in the CSV file.</li>"+
-				"<li>If found a matching location, create a csv and json files for that particular location.</li>"
+				"<li>If found a matching location, create a csv and JSON files for that particular location.</li>"
 				);
 			modalFooterA.attr("href","https://github.com/devbabar/read_write_csv_json");
 
@@ -860,11 +587,10 @@ $(document).ready(function(){
 		// *************** Data Analysis Section Ends ****************
 
 		var duration = (performance.now() - start);
-		console.log(duration);
 	};
 
-
-	$(".div-style>a").click(modalFunction);
+	var aTag = $(".div-style>a");
+	aTag.click(modalFunction);
 	// ============modal end ==============
 
 		
