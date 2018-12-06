@@ -778,8 +778,8 @@
     }
 
     .list-group-item-text{
-        font-size: 7pt;
-        line-height: 9pt;
+        font-size: 10pt;
+        line-height: 14pt;
     }
 
     .about-1-icons{
@@ -853,6 +853,9 @@
         margin-top: 15px;
     }
     
+    .skill-sec{
+        margin: 0px;
+    }
     
     /*----------edu sec end---------*/
 

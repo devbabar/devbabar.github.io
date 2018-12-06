@@ -211,7 +211,7 @@ ul.nav a:hover{color: #8afaf1 !important;}
 }
 
 .list-group-item-text{
-  font-size: 12pt;
+  font-size: 14pt;
   font-family: 'Raleway', serif;
 }
 
@@ -224,7 +224,7 @@ ul.nav a:hover{color: #8afaf1 !important;}
 
 .list-group-item-text{
   color: #8c8c8c;
-  line-height:18pt;
+  line-height:20pt;
 }
 
 .icons{
@@ -775,7 +775,7 @@ a:visited{
 }
 
 .knowledgeSection ul{
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
   }
 
 /*-------------graduate projects start---------------*/
@@ -847,6 +847,10 @@ a:visited{
   margin: 0;
 }
 /*-------------graduate projects end---------------*/
+
+.skill-sec{
+  margin: 50px 0px 0px 0px;
+}
 
 /*======= Education Container ================================================ end*/
 
