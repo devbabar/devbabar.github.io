@@ -510,7 +510,8 @@ $(document).ready(function(){
 	modalBodyH2 = $(".modal-body>h2");
 	modalBodyUl = $(".modal-body>ul");
 	modalBodyP = $(".modal-body>.modal-p>ul");
-	modalFooterA = $(".modal-footer>a");
+	// modalFooterA = $(".modal-footer>div>a");
+	modalFooterA = $("#github_link");
 
 	var modalFunction = function(){
 		var start = performance.now();
